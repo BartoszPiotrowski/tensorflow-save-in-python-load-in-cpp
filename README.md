@@ -27,18 +27,17 @@ https://tuanphuc.github.io/standalone-tensorflow-cpp/
 (Building with Bazel will take ~10 minutes.) Place `lib` and `include` folders
 with relevant content in this repo.
 
+Set the `LD_LIBRARY_PATH` environmental variable:
+```
+export LD_LIBRARY_PATH=lib
+```
+
 Check if you can compile a test example with this command:
 ```
 g++ -Llib -Iinclude -Iinclude/third_party \
 -ltensorflow_cc -ltensorflow_framework \
 -o test/test1 test/test1.cc
 ./test/test1
-```
-
-
-Set the `LD_LIBRARY_PATH` environmental variable:
-```
-export LD_LIBRARY_PATH=lib
 ```
 
 ## Examples
