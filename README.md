@@ -1,15 +1,15 @@
-# Train Tensorflow model in Python and load it in C++.
+# Train Tensorflow model in Python and load it in C++
 
 The repo contains two simplistic examples of training model in Python and
-loadin it i C++, according to two available methods.
+loading it in C++, according to two available methods.
 
 
 ## Requirements on Python side
-Tensorflow 1.15
+- tensorflow 1.13 -- 1.15
 
 
 ## Requirements on C++ side
-First make sure you have Bazel installed. Then, clone Tensorflow repo:
+First make sure you have Bazel installed. Then, clone the Tensorflow repo:
 ```
 cd ..
 git clone https://github.com/tensorflow/tensorflow
@@ -36,7 +36,7 @@ g++ -Llib -Iinclude -Iinclude/third_party \
 ```
 
 
-Set `LD_LIBRARY_PATH` environmental variable:
+Set the `LD_LIBRARY_PATH` environmental variable:
 ```
 export LD_LIBRARY_PATH=lib
 ```
@@ -44,7 +44,7 @@ export LD_LIBRARY_PATH=lib
 ## Examples
 
 There are two similar examples where a small network is trained in Python on
-MNIST examples and than loaded in C++.
+MNIST examples and then loaded in C++.
 
 
 ### `example_1`:
@@ -75,7 +75,7 @@ Running C++ code:
 The first and the second argument are a path to meta-graph and a path to values
 of variables in the graph, respectively.
 
-Because input is not initialized you should see some random `0`s, `1`s or
+Because the input is not initialized you should see some random `0`s, `1`s or
 `nan`s as an output.)
 
 References:
