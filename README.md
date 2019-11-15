@@ -21,7 +21,9 @@ curl -L https://github.com/tensorflow/tensorflow/compare/master...hi-ogawa:grpc-
 ```
 Then, follow approximately these installation instructions, up to
 `sudo ldconfig`:
+
 https://tuanphuc.github.io/standalone-tensorflow-cpp/
+
 (Building with Bazel will take ~10 minutes.) Place `lib` and `include` folders
 with relevant content in this repo.
 
